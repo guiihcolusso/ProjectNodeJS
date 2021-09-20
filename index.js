@@ -12,7 +12,7 @@ server.get('/', (req, res) => {
 
 server.get('/*', (req, res) => {
 
-    res.sendFile(path.join(__dirname, '/paginas/404.html'));
+    res.send('404 - A página não foi encontrada')
 
 });
 
